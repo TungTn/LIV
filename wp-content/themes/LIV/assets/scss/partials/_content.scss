@@ -1,0 +1,26 @@
+//————————————————————————————————————————————
+// Mixin
+//————————————————————————————————————————————
+@mixin flex-layout($align-items,$justify-content) {
+	display: -webkit-flex;
+	display: flex;
+	align-items: $align-items;
+	justify-content: $justify-content;
+}
+
+//————————————————————————————————————————————
+// Content
+//————————————————————————————————————————————
+
+
+.container {
+	max-width: 1535px;
+	padding: 0 30px;
+	margin: 0 auto;
+	@media only screen and (max-width: 1200px) {
+		padding: 0 24px;
+	}
+	@include bp(max, 750px) {
+		padding: 0 16px;
+	}
+}

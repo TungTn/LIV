@@ -1,0 +1,64 @@
+.careersArea {
+	@include bp(max, 750px) {
+		.mv {
+			&__item {
+				height: 240px;
+				.content {
+					.tit {
+						font-size: 30px;
+					}
+				}
+			}
+		}
+		.section {
+			margin: 25px 0 0 0;
+			.container {
+				padding: 0;
+			}
+			.inner {
+				.main {
+					margin-top: 0;
+					.content {
+						padding-top: 0;
+						.careers_info {
+							h4 {
+								padding: 0 16px;
+								font-size: 21px;
+							}
+							p {
+								font-size: 14px;
+								padding: 0 16px;
+								margin: 15px 0;
+								text-align: left;
+							}
+							.list {
+								margin: 30px 0 20px;
+								.item {
+									flex-direction: column;
+									.img {
+										max-width: none;
+										margin-right: 0;
+									}
+									.box {
+										max-width: none;
+										.ttl {
+											margin: 15px 0 10px 0;
+											display: block;
+											padding: 0 16px;
+										}
+										p {
+											margin: 0;
+										}
+									}
+									& + .item {
+										margin-top: 20px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

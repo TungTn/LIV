@@ -1,0 +1,283 @@
+//————————————————————————————————————————————
+// Tourism Details
+//————————————————————————————————————————————
+.tourisArea {
+	.section {
+		margin: 0 0 180px;
+		&.touris_details_section {
+			.touris-top-page {
+				width: 100%;
+				margin-bottom: 20px;
+				h2 {
+					font-family: 'Montserrat-SemiBold';
+					font-size: 36px;
+					position: relative;
+					color: #000;
+					@media (max-width: 1200px) {
+						font-size: 29px;
+					}
+				}
+				.touris-details-add {
+					.address-details {
+						padding-top: 10px;
+						li {
+							display: inline-block;
+							vertical-align: middle;
+							span {
+								color: #333;
+								font-size: 18px;
+								@media (max-width: 1200px) {
+									font-size: 15px;
+								}
+							}
+							&.user-post {
+								span {
+									padding-left: 0;
+									&.author {
+										font-family: 'Montserrat-Medium';
+									}
+								}	
+								&:after {
+									content: "|";
+									margin: 0 15px;
+									color: #000;
+								}							
+							}
+							&.view-count {
+								&:after {
+									content: "|";
+									margin: 0 15px;
+									color: #000;
+								}
+							}
+							&.like-count {
+								background-image: url(../images/touris_details/like.png);
+								background-repeat: no-repeat;
+								padding-left: 30px;
+							}
+							&.position {
+								height: initial;
+								&:after {
+									content: "|";
+									margin:0 15px;
+									color: #000;
+								}
+							}
+							&.money {
+								span {
+									padding-left: 30px;									
+								}
+								&:after {
+									content: "|";
+									margin:0 15px;
+									color: #000;
+								}
+							}
+							&.calender {
+								span {
+									padding-left: 30px;
+								}
+							}
+						}
+						.position {
+							span {
+								padding-left: 30px;								
+							}
+						}
+					}						
+				}
+			}
+			.container {
+				display: flex;
+			}   
+			.inner { 
+				width: calc(100% - 20%); 
+				.main { 
+					display: flex;				 
+					.content {  
+						width: 97%;  
+						.touris-details {						
+							.touris-details-content {
+								border-bottom: solid 1px #ccc;
+								padding-bottom: 30px;
+								img {
+									width: 100%;
+								}
+								.title-img {
+									padding-top:10px;
+									display: block;
+								}
+								.text-content {
+									padding: 20px 0;
+									p {
+										color: #333;
+										font-size: 18px;
+										font-family: 'Montserrat-Regular', san-serif;
+										@media (max-width: 1200px) {
+											font-size: 15px;
+										}
+									}
+									h2 {
+										color: #333;
+										font-size: 24px;
+										font-family: 'Montserrat-SemiBold', san-serif;
+										@media (max-width: 1200px) {
+											font-size: 20px;
+										}
+									}
+								}		
+								.touris-gallery {
+									.gallery-top {
+										.gallery__item {
+											height: 500px;
+											cursor: pointer;
+										}
+									}
+									.gallery-thumbs {
+										.swiper-wrapper {
+											display: flex;
+											justify-content: space-between;
+											.swiper-slide {
+												width: 25%;
+												height: 100%;
+												opacity: 0.6;
+											}
+											.swiper-slide-thumb-active {
+												opacity: 1;
+											}
+											.gallery__item {
+												width: 100%;
+												height: 200px;
+												margin-top:20px;
+												cursor: pointer;
+												&:hover {
+													opacity: .7;
+												}
+												&:nth-of-type(4n+0) {
+													margin-right: 0 !important;
+												}
+												&:nth-of-type(4n+1) {
+													margin-left: 20px;
+												}
+												&:first-child {
+													margin-left: 0;
+												}
+											}
+										}
+									}
+								}		
+								.tag {
+									display: flex;
+									margin-top:40px;
+									a {										
+										&.tags_name {
+											color: #FFF;
+											background: #434343;
+											padding: 7px 42px;											
+										}
+										&.tags {
+											color: #434343;
+											padding: 6px 15px;
+											border:1px solid #434343;
+											margin: 0 5px;
+											&:hover {
+												color: #fff;
+												background: #434343;
+											}
+										}
+									}
+								}		
+							}
+							.title {
+								font-size: 30px;
+								font-family: 'Montserrat-SemiBold';
+								line-height: 1;
+								margin-bottom: 30px;
+								margin-top:30px;
+								color: #000;
+							}
+							.related-tours {
+								display: flex;
+								flex-wrap: wrap;
+								justify-content: space-between;
+								border-bottom: solid 1px #ccc;
+								padding-bottom: 30px;
+								.article {
+									width: 48%;
+									&:nth-child(n+3) {
+										padding-top:30px;
+									}
+									.img {
+										position: relative;
+										height: 281px;
+										img {
+											width: 100%;
+										}
+									}
+									.box {
+										border: 1px solid #ccc;
+										padding: 15px 20px;
+										.ttl {
+											padding:10px 0;
+											font-size: 21px;
+											font-family: 'Montserrat-SemiBold';
+											line-height: 1;
+											a {
+												color: #11689B;
+												overflow: hidden;
+												text-overflow: ellipsis;
+												line-height: 24px;
+												-webkit-line-clamp: 1;
+												display: -webkit-box;
+												-webkit-box-orient: vertical;
+												&:hover {
+													color: #00a1ff;
+												}
+											}
+										}
+										.rate {
+											span {
+												color: #333;
+												font-size: 14px;
+												font-family: 'Montserrat-Regular';
+												&.view {
+													&:after {
+														content: "|";
+														margin: 0 15px;
+													}
+												}
+											}
+										}
+									}
+								}								
+							}
+							.tourism-details-comment{
+								.page-section {
+									.testimonial {
+										h3 {
+											font-family: 'Montserrat-Medium';
+										}
+									}
+									.comments__box {
+										h3 {
+											font-family: 'Montserrat-Medium', sans-serif;
+											margin: 15px 0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+			}
+			.banner {
+				padding-top: 0;
+			}
+
+		}
+	}
+}
+.tourism_details_img {
+	height: 433px;
+}

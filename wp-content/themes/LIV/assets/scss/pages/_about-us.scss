@@ -1,0 +1,170 @@
+//————————————————————————————————————————————
+// About  Us
+//————————————————————————————————————————————
+.AboutArea {
+	.mv {
+		&__item {
+			color: #fff;
+			height: 600px;
+			text-align: center;
+			margin: auto;
+			position: relative;
+			.content {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				.tit {
+					font-size: 60px;
+					font-family: 'Montserrat-SemiBold';
+                    line-height: 1;
+                    @media (max-width: 1200px) {
+                        font-size: 48px;
+                    }
+				}
+			}
+		}
+	}
+	.section {
+		margin: 0 0 180px;
+		.container {
+			display: flex;
+		}
+		.inner {
+            width: 100%;
+			.main {
+				display: flex;
+				.content {
+                    width: 100%;
+                    max-width: 100%;
+                    .about_info {
+                        padding-bottom: 30px;
+                        a {
+                            color: #11689B;
+                        }
+                        p {
+                            color: #000;
+                            font-family: 'Montserrat-Light';
+                            font-size: 16px;
+                            line-height: 1.5;
+                            text-align: justify;
+                            @media only screen and (max-width: 1200px) {
+                                font-size: 13px;
+                            }
+                            span {
+                                font-family: 'Montserrat-Regular';
+                                line-height: 2;
+                            }
+                            &.desc {
+                                margin-top: 15px;
+                            }
+                        }
+                        ul {
+                            li {
+                                color: #000;
+                                font-family: 'Montserrat-Light';
+                                line-height: 1.5;
+                                font-size: 16px;
+                            }
+                        }
+                        h4 {
+                            font-size: 30px;
+                            color: #000;
+                            @media (max-width: 1200px) {
+                                font-size: 24px;
+                            }
+                            &.ttl {
+                                margin-bottom: 9px;
+                            }
+                            &.mini_ttl {
+                                margin-bottom: 27px;
+                            }
+                        }
+                        .list {
+                            margin-bottom: 25px;
+                            .item {
+                                display: flex;
+                                & + .item {
+                                    margin-top: 30px;
+                                }
+                                .img {
+                                    max-width: 231px;
+                                    width: 100%;
+                                    a {
+                                        display: block;
+                                        transition: all .3s;
+                                        &:hover {
+                                            opacity: .7;
+                                        }
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                                .box {
+                                    color: #11689b;
+                                    max-width: 100%;
+                                    padding-left: 20px;
+                                    .ttl {
+                                        display: inline-block;
+                                        font-size: 21px;
+                                        line-height: 1;
+                                        margin-top: -3px;
+                                        position: relative;
+                                        a {
+                                            font-family: 'Montserrat-Regular',sans-serif;
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                                &__details {
+                                    max-width: 231px;
+                                    width: 100%;
+                                    background: #e6eff4;
+                                    text-align: center;
+                                    padding:20px 25px 2px;
+                                    &__box {
+                                        padding-bottom: 20px;
+                                        h4 {
+                                            font-size: 48px;
+                                            font-family: 'Montserrat-Regular',sans-serif;
+                                            color: #11689B;
+                                            line-height: 1;
+                                            margin-bottom: 0;
+                                            @media (max-width: 1200px) {
+                                                font-size: 40px;
+                                            }
+                                        }
+                                        span {
+                                            font-size: 14px;
+                                            color: #11689b;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .banner {
+                    .link {
+                        box-shadow: 3px 3px 10px 0px rgba(153,153,153,0.5);
+                        display: block;
+                        transition: all .3s;
+                        & + .link {
+                        margin-top: 30px;
+                        }
+                        &:hover {
+                        opacity: .7;
+                        }
+                    }
+                }
+                .home_banner {
+                    margin-left: 33px;
+                }
+            }
+        }
+    }
+}
+.list_info .item .box {
+    padding-left: 0px !important;
+}

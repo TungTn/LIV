@@ -1,0 +1,288 @@
+//————————————————————————————————————————————
+// Tourism Details
+//————————————————————————————————————————————
+.issue_details_Area {
+	.section {
+		margin: 0 0 180px;
+		&.issue_details_section {
+			.issue-top-page {
+				width: 100%;
+				margin-bottom: 20px;
+				h2 {
+					font-family: 'Montserrat-SemiBold';
+					font-size: 36px;
+					position: relative;
+					color: #000;
+					@media (max-width: 1200px) {
+						font-size: 30px;
+					}
+				}
+				.issue-details-add {
+					.address-details {
+						padding-top: 10px;
+						li {
+							display: inline-block;
+							vertical-align: middle;
+							span {
+								color: #333;
+								font-size: 18px;
+							}
+							&.user-post {
+								span {
+									padding-left: 0;
+									&.author {
+										font-family: 'Montserrat-Medium';
+									}
+								}
+								&:after {
+									content: "|";
+									margin: 0 15px;
+									color: #000;
+								}
+							}
+							&.view-count {
+								&:after {
+									content: "|";
+									margin: 0 15px;
+									color: #000;
+								}
+							}
+							&.like-count {
+								background-image: url(../images/touris_details/like.png);
+								background-repeat: no-repeat;
+								padding-left: 30px;
+							}
+							&.position {
+								height: initial;
+							}
+							&.money {
+								background-image: url(../images/touris_details/money.png);
+								background-repeat: no-repeat;
+								padding-right: 30px;
+								span {
+									line-height: 28px;
+								}
+							}
+							&.calender {
+								background-image: url(../images/touris_details/calendar.png);
+								background-repeat: no-repeat;
+							}
+						}
+						.position {
+							background-image:url("../images/position.png");
+							height: 32px;
+							background-repeat: no-repeat;
+							padding-right: 30px;
+						}
+						.phone {
+							background-image:url("../images/phone.png");
+							height: 32px;
+							background-repeat: no-repeat;
+							padding-left: 30px;
+							padding-right: 30px;
+						}
+						.web {
+							background-image:url("../images/calendar.png");
+							height: 32px;
+							background-repeat: no-repeat;
+							padding-left: 30px;
+						}
+					}
+				}
+			}
+			.container {
+				display: flex;
+			}
+			.inner {
+				width: calc(100% - 20%);
+				.main {
+					display: flex;
+					.content {
+						width: 97%;
+						.issue-details {
+							.issue-details-content {
+								border-bottom: solid 1px #ccc;
+								padding-bottom: 30px;
+								img {
+									width: 100%;
+									cursor: pointer;
+								}
+								.title-img {
+									padding-top:10px;
+									display: block;
+								}
+								.text-content {
+									p {
+										color: #333;
+										font-size: 18px;
+										font-family: 'Montserrat-Regular', san-serif;
+										padding: 10px 0;
+										@media (max-width: 1200px) {
+											font-size: 15px;
+											line-height: 1.5;
+										}
+									}
+									strong {
+										color: #333;
+										font-size: 24px;
+										font-family: 'Montserrat-SemiBold', san-serif;
+										padding: 15px 0;
+										display: block;
+									}
+								}
+								.issue-gallery {
+									.gallery-top {
+										.gallery__item {
+											height: 500px;
+											cursor: pointer;
+										}
+									}
+									.gallery-thumbs {
+										.swiper-wrapper {
+											display: flex;
+											justify-content: flex-start;
+											.swiper-slide {
+												width: 25%;
+												height: 100%;
+												opacity: 0.6;
+											}
+											.swiper-slide-thumb-active {
+												opacity: 1;
+											}
+
+											.gallery__item {
+												width: 100%;
+												height: 200px;
+												margin-top:20px;
+												cursor: pointer;
+												&:hover {
+													opacity: .7;
+												}
+											}
+										}
+									}
+								}
+
+
+							}
+							.title {
+								font-size: 30px;
+								font-family: 'Montserrat-SemiBold';
+								line-height: 1;
+								margin-bottom: 30px;
+								margin-top:30px;
+								color: #000;
+							}
+							.related-issue {
+								display: flex;
+								flex-wrap: wrap;
+								justify-content: space-between;
+								.list {
+									margin-top: 13px;
+									.item {
+										display: flex;
+										& + .item {
+											margin-top: 30px;
+										}
+										.tit {
+											font-size: 21px;
+											font-family: 'Montserrat-SemiBold';
+											line-height: 1;
+											position: relative;
+											a {
+												color: #11689B;
+											}
+										}
+										.user-post {
+											font-size: 16px;
+											line-height: 2;
+											color: #000;
+											.author {
+												&:after {
+													content: "|";
+													margin: 0 5px;
+													color: #000;
+												}
+											}
+										}
+										.txt {
+											color: #000;
+											font-size: 18px;
+											line-height: 1.2;
+											text-align: justify;
+											@media (max-width: 1200px) {
+												font-size: 15px;
+											}
+										}
+										.chatting {
+											color: #000;
+											display: flex;
+											font-size: 16px;
+											line-height: 1;
+											margin-top: 10px;
+											.view {
+												margin-right: 35px;
+												position: relative;
+												&:after {
+													background: #000;
+													bottom: 0;
+													content: '';
+													position: absolute;
+													right: -17px;
+													top: 0;
+													width: 1px;
+												}
+											}
+										}
+									}
+								}
+							}
+							.issue-details-comment{
+								border-bottom: 1px solid #ccc;
+								padding-bottom: 30px;
+								.testimonial {
+									h3 {
+										font-family: 'Montserrat-Medium';
+									}
+								}
+								.comments__box {
+									h3 {
+										font-family: 'Montserrat-Medium', sans-serif;
+										margin: 15px 0;
+									}
+								}
+							}
+						}
+					}
+				}
+
+			}
+			.banner {
+				width: 20%;
+				padding-top: 0;
+				.link {
+					box-shadow: 3px 3px 10px 0px rgba(153,153,153,0.5);
+					display: block;
+					transition: all .3s;
+					& + .link {
+						margin-top: 30px;
+					}
+					&:hover {
+						opacity: .7;
+					}
+				}
+				.title {
+					font-size: 30px;
+					font-family: 'Montserrat-SemiBold';
+					line-height: 1;
+					margin-bottom: 15px;
+					margin-top: 30px;
+				}
+			}
+
+		}
+	}
+}
+.issue_details_img {
+	height: 433px;
+}

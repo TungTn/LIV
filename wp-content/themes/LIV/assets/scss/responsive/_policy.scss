@@ -1,0 +1,35 @@
+.policyArea {
+	@include bp(max, 750px) {
+		.mv {
+			&__item {
+				height: 240px;
+				.content {
+					width: max-content;
+					.tit {
+						font-size: 30px;
+					}
+				}
+			}
+		}
+		.section {
+			margin: 24px 0 0;
+			.inner {
+				.main {
+					margin-top: 0;
+					.content {
+						padding-top: 0;
+						.policy_info {
+							padding-bottom: 25px;
+							p {
+								font-size: 14px;
+							}
+							h4 {
+								font-size: 21px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

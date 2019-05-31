@@ -1,0 +1,193 @@
+//————————————————————————————————————————————
+// Issue Details
+//————————————————————————————————————————————
+@include bp(max, 750px) {
+	.issue_details_Area {
+		.section {
+			margin: 25px 0;
+			&.issue_details_section {
+				.issue-top-page {
+					.title {
+						font-size: 21px;
+						font-family: 'Montserrat-Medium';
+						a {
+							&:after {
+								display: none;
+							}
+						}
+					}
+					.issue-details-add {
+						.address-details {
+							li {
+								display: flex;
+								&.user-post {																	
+									&:after {
+										content: "";
+									}
+								}
+								&.view-count {
+									.view {
+										&:after { 
+											content: "|";
+											margin: 0 5px;
+											color: #000;
+										}
+									}
+									&:after {
+										content: "";
+									}
+								}
+								span {
+									font-size: 14px;
+									font-family: 'Montserrat-Regular';
+								}
+							}
+						}
+					}
+				}
+				.container {
+					display: flex;
+				}
+				.inner {
+					width: 100%;
+					.main {
+						display: flex;
+						.content {
+							width: 100%;
+							.issue-details {								
+								.issue-details-content {
+									border-bottom: solid 1px #ccc;
+									padding-bottom: 15px;
+									img {
+										width: 100%;
+									}
+									.title-img {
+										padding-top:10px;
+										display: block;
+									}
+									.text-content {
+										p {
+											color: #333;
+											font-size: 14px;
+											font-family: 'Montserrat-Regular', san-serif;
+											padding: 10px 0;
+										}
+										strong {
+											color: #333;
+											font-size: 24px;
+											font-family: 'Montserrat-SemiBold', san-serif;
+											padding: 15px 0;
+											display: block;
+										}
+									}
+									.issue-gallery {
+										.gallery-top {
+											.gallery__item {
+												height: 250px;
+												cursor: pointer;
+											}
+										}
+										.gallery-thumbs {
+											.swiper-wrapper {
+												display: flex;
+												justify-content: space-between;
+												.gallery__item {
+													width: 100%;
+													height: 200px;
+													margin-top:20px;
+													cursor: pointer;
+													&:hover {
+														opacity: .7;
+													}
+												}
+											}
+										}
+									}
+								}
+								.title {
+									font-size: 21px;
+									font-family: 'Montserrat-SemiBold';
+									line-height: 1;
+									margin: 25px 0;
+									color: #000;
+								}
+								.related-issue {
+									display: flex;
+									flex-wrap: wrap;
+									justify-content: space-between;
+									.list {
+										margin-top: 0;
+										.item {
+											display: flex;
+											& + .item {
+												margin-top: 30px;
+											}
+											.tit {
+												font-size: 16px;
+												font-family: 'Montserrat-Medium';
+												line-height: 1;
+												position: relative;
+												a {
+													color: #11689B;
+												}
+											}
+											.user-post {
+												font-size: 14px;
+												line-height: 2;
+												color: #000;
+												.author {
+													&:after {
+														content: "|";
+														margin: 0 5px;
+														color: #000;
+													}
+												}
+											}
+											.txt {
+												color: #000;
+												font-size: 14px;
+												line-height: 1.2;
+												text-align: justify;
+											}
+										}
+									}
+								}
+								.issue-details-comment{
+									border: 0;
+									padding-bottom: 0;
+									.page-section {
+										border-bottom: 1px solid #ccc;
+										padding-bottom: 20px;
+										.testimonial {
+											h3 {
+												font-family: 'Montserrat-Medium';
+											}
+										}
+										.comments__box {
+											h3 {
+												font-family: 'Montserrat-Medium', sans-serif;
+												margin: 15px 0;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+				}
+				.banner {
+					padding-top: 0;
+				}
+
+			}
+		}
+	}
+	.issue_details_img {
+		height: 245px;
+	}
+}
+
+
+
+

@@ -1,0 +1,577 @@
+//————————————————————————————————————————————
+// Restaurant List
+//————————————————————————————————————————————
+
+.restaurantArea__details{
+	.section {
+		margin: 0 0 180px;
+		&.restaurent_details_section {
+			.inner {
+				width: 100%;
+				.main {
+					display: flex;
+					.content {
+						width: 100%;
+						.restaurant-details {
+							h2.title {
+								color: #000;
+								font-family: 'Montserrat-SemiBold';
+								line-height: 1;
+								font-size: 36px;
+								text-transform: uppercase;
+							}
+							.restaurant-details-add {
+								padding-top: 20px;
+								.heartbar {
+									display: inline-block;
+									li {
+										display: inline-block;
+										vertical-align: middle;
+										span {
+											color: #333;
+											font-size: 18px;
+											&:first-child {
+												padding-left: 30px;
+											}
+											&.count {
+												&:after {
+													content: "|";
+													margin: 0 10px;
+													color: #000;
+												}
+											}
+										}
+									}
+									.hearted {
+										display: inline-block;
+										background-image:url("../images/heart-3x.png");
+										width: 28px;
+										height: 24px;
+										background-repeat: no-repeat;
+									}
+									.heart {
+										display: inline-block;
+										background-image:url("../images/heart-no-bg-3x.png");
+										width: 28px;
+										height: 24px;
+										background-repeat: no-repeat;
+									}
+								}
+								.address-details {
+									padding-top: 20px;
+									li {
+										display: inline-block;
+										vertical-align: middle;
+										span {
+											color: #333;
+											font-size: 18px;
+											padding-left: 30px;
+											a {
+												color: #000;
+											}
+										}
+									}
+									.position {
+										span {
+											&:after {
+												content: "|";
+												margin: 0 15px;
+												color: #000;
+											}
+										}
+									}
+									.opening_hour {
+										span {
+											&:after {
+												content: "|";
+												margin: 0 15px;
+												color: #000;
+											}
+										}
+									}
+									.phone {
+										padding-left: 10px;
+										span {
+											&:after {
+												content: "|";
+												margin: 0 15px;
+												color: #000;
+											}
+										}
+									}
+									.web {
+										padding-left: 10px;
+									}
+								}
+							}
+							.restaurant-details-image {
+								padding-top:15px;
+								&__list {
+									display: flex;
+									&__item {
+										width: calc( (100% - 10px) / 3);
+										&:nth-child(1) {
+											margin-right: 10px;
+										}
+										&:nth-child(2) {
+										}
+										&:nth-child(3) {
+											margin-left: 10px;
+										}
+										img {
+											width: 100%;
+											height: auto;
+											&:hover {
+												opacity: .7;
+											}
+										}
+										&__big {
+											margin-top:10px;
+											&:nth-child(1) {
+
+												margin-right: 5px;
+												width: calc( (100% - 5px) / 2);
+											}
+											&:nth-child(2) {
+												margin-left: 5px;
+												width: calc( (100% - 5px) / 2);
+											}
+											img {
+												width: 100%;
+												height: auto;
+												&:hover {
+													opacity: .7;
+												}
+											}
+										}
+									}
+								}
+							}
+							.restaurant-details-menu {
+								padding-top:60px;
+								.menu-qr-img {
+									position: relative;
+									display: flex;
+									flex-direction: row;
+									&__image {
+										position: relative;
+										text-align: center;
+										max-width: 200px;
+										width: 100%;
+										img {
+											width: 100%;
+										}
+										&__text {
+											a {	
+												position: absolute;
+												top: 50%;
+												left: 50%;
+												transform: translate(-50%, -50%);
+												color: #FFF;
+												font-size: 36px;
+												font-family: 'Montserrat-SemiBold';
+												line-height: 1.2;
+											}
+											
+										}
+									}
+									img {
+										&.qr-code {
+											position: absolute;
+											width: 147px;
+											border-top: solid 2px #E16E38;
+											top: 10%;
+											border-bottom: solid 2px #E16E38;
+										}
+									}
+									span {
+										&.text-translate {
+											position: absolute;
+											font-size: 12px;
+											font-family: 'Montserrat-SemiBold';
+										}
+										&:last-child {
+											position: absolute;
+											bottom: 0;
+											font-size: 7px;
+											text-align: center;
+											width: 147px;
+											font-family: 'Montserrat-SemiBold';
+										}
+									}
+									.scan__code {
+										position: relative;
+										width: 100%;
+										max-width: 165px;
+										margin-left: 65px;
+										.qr__code__img {
+											margin-top:20px;
+										}
+									}
+								}
+							}
+							.restaurant-details-content-tab {
+								padding-top: 60px;
+								.page-section {
+									padding-top: 30px;
+								}
+								#restaurantNav {
+									padding-bottom: 30px;
+									border-bottom: solid 1px #ccc;
+									a {
+										font-size: 18px;
+										font-family: 'Montserrat-Light', sans-serif;
+										color: #11689B;
+										&:nth-child(n+2) {
+											padding-left: 60px;
+										}
+										&:hover {
+											color: #00a1ff;
+										}
+									}
+								}
+								#reviews {
+									.tab-review-top {
+										margin-bottom: 10px;
+										display: flex;
+										h3 {
+											font-size: 30px;
+											color: #000;
+											font-family: 'Montserrat-SemiBold', sans-serif;
+											padding-right: 70px;
+										}
+										a {
+											line-height: 24px;
+											background: #E16E38;
+											color: #FFF;
+											padding: 7px 24px;
+											font-size: 16px;
+											border-radius: 5px;
+											font-family: 'Montserrat-Regular', sans-serif;
+										}
+									}
+									.tab-review-point {
+										.heartbar {
+											display: inline-block;
+											.percent {
+												padding:5px 0;
+												color: #000;
+												li {
+													display: inline-block;
+													vertical-align: middle;
+													&:nth-child(1) {
+														width: 100px;
+													}
+													span {
+														color: #333;
+														font-size: 18px;
+														padding-left: 30px;
+													}
+													h2 {
+														font-size: 50px;
+														font-family: 'Montserrat-SemiBold', sans-serif;
+														padding-right: 30px;
+													}
+													.box-total-percent {
+														background: #B7B7B7;
+														width: 324px;
+														height: 15px;
+														@for $i from 1 through 100 {
+															.box-percentage {
+																&.w#{$i} {
+																	$value: ($i * 1%);
+																	width: $value;
+																	background: #E16E38;
+																	height: 15px;
+																}
+															}
+														}
+													}
+												}
+												&.top {
+													li {
+														p {
+															&.number-percent {
+																padding-left: 30px;
+																font-size: 18px;
+															}
+														}
+													}
+												}
+											}
+											ul:nth-child(1) {
+												li {
+													display:inline-block;
+													vertical-align: middle;
+													h2 {
+														font-size: 50px;
+														font-family: 'Montserrat-SemiBold', sans-serif;
+														padding-right: 30px;
+														color: #000;
+													}
+													span {
+														color: #333;
+														font-size: 18px;
+														padding-left: 30px;
+													}
+												}
+											}
+											.hearted {
+												display: inline-block;
+												background-image:url("../images/heart.png");
+												width: 43px;
+												height: 35px;
+												background-repeat: no-repeat;
+												background-size: contain;
+											}
+											.heart {
+												display: inline-block;
+												background-image:url("../images/heart-no-bg-4x.png");
+												width: 43px;
+												height: 35px;
+												background-repeat: no-repeat;
+												background-size: contain;
+											}
+										}
+									}
+									.testimonial {
+										.title {
+											font-family: 'Montserrat-Medium';
+											line-height: 1;
+											margin-bottom: 30px;
+											margin-top: 30px;
+											color: #000;
+											font-size: 30px;
+										}
+										.testimonial-box {
+											display: flex;
+											a {
+												img {
+													vertical-align: top;
+													display: flex;
+													margin: 0 auto;
+													padding-bottom: 15px;
+												}
+												span {
+													vertical-align: bottom;
+													font-size: 21px;
+													font-family: 'Montserrat-Regular', sans-serif;
+													color: #000;
+												}
+											}
+											.box-comment {
+												display: flex;
+												flex-direction: column;
+												padding-left: 50px;
+												width: 80%;
+												.time-post {
+													color: #333;
+													font-size: 18px;
+													font-family: 'Montserrat-Light', sans-serif;
+													padding-bottom: 20px;
+												}
+												.title-comment {
+													color: #000;
+													font-size: 21px;
+													font-family: 'Montserrat-SemiBold', sans-serif;
+													padding-bottom: 20px;
+												}
+												.details-comment {
+													color: #000;
+													font-size: 21px;
+													font-family: 'Montserrat-Regular', sans-serif;
+												}
+											}
+										}
+									}
+									.form-reviews-comment {
+										&.hide {
+											display: none;
+										}
+										&.show {
+											display: block;
+										}
+										.form-reviews {
+											display: flex;
+											input[type=checkbox]:checked + label {
+												color: #F26522;
+											}
+											.travel-rating {
+												line-height: 30px;
+												padding-right: 100px;
+												display: flex;
+												flex-direction: column;
+												h3 {
+													color: #000;
+												}
+											}
+											.travel-type {
+												line-height: 30px;
+												display: flex;
+												flex-direction: column;
+												h3 {
+													color: #000;
+												}
+											}
+										}
+										.restaurant_review {
+											padding-top:30px;
+											display: flex;
+											flex-direction: column;
+											::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+												color: #393939;
+											}
+											::-moz-placeholder { /* Firefox 19+ */
+												color: #393939;
+											}
+											:-ms-input-placeholder { /* IE 10+ */
+												color: #393939;
+											}
+											:-moz-placeholder { /* Firefox 18- */
+												color: #393939;
+											}
+											textarea {
+												padding: 12.5px 15px;
+												background-color: #F2F2F2;
+												font-size: 21px;
+												font-family: 'Montserrat-Light',sans-serif;
+												border:none;
+												border-radius: 5px;
+												width: 100%;
+											}
+											input {
+												padding: 11px 15px;
+												background: #f2f2f2;
+												margin: 30px 0 0;
+												width: 30%;
+												font-size: 14px;
+												font-family: 'Montserrat-Light',sans-serif;
+												border-radius: 5px;
+												width: 210px;
+											}
+											.submit-button {
+												width: 110px;
+												border-radius: 4px;
+												background-color: #E16E38;
+												color: #FFF;
+												padding: 12px 15px;
+												margin: 30px 0 0;
+												box-sizing: border-box;
+												box-shadow: none;
+												border: none;
+												cursor: pointer;
+												font-size: 18px;
+											}
+											.cancel_button {
+												font-size: 18px;
+												border-radius: 4px;
+												width: 110px;
+												background-color: #d8d8d8;
+												color: #000;
+												padding: 11px 15px;
+												margin: 30px 0 0;
+												box-sizing: border-box;
+												box-shadow: none;
+												border: none;
+												cursor: pointer;
+											}
+										}
+									}
+								}
+								.content {
+									.tab-details-top {
+										h3 {
+											font-size: 30px;
+											color: #000;
+											font-family: 'Montserrat-SemiBold', sans-serif;
+										}
+									}
+									.tab-details-content {
+										padding-top: 20px;
+										color: black;
+										font-size: 18px;
+										font-family: 'montserrat-regular';
+									}
+								}
+								#details {
+									width: 80%;
+									.tab-details-top {
+										h3 {
+											font-size: 30px;
+											color: #000;
+											font-family: 'Montserrat-SemiBold', sans-serif;
+										}
+									}
+									.tab-details-content {
+										padding-top: 20px;
+										color: black;
+										font-size: 18px;
+										font-family: 'montserrat-regular';
+										.box__total {
+											display: flex;
+											justify-content: space-between;
+											margin: 25px 0 50px;
+											&__title {
+												max-width: 262px;
+												vertical-align: top;
+												width: 100%;
+												font-size: 21px;
+												font-family: 'Montserrat-Medium', sans-serif;
+												color: #000;
+											}
+											&__info {
+												color: #333;
+												font-size: 21px;
+												font-family: 'Montserrat-Regular', sans-serif;
+												line-height: 30px;
+												max-width:890px;
+												width: 100%;
+												justify-items: flex-end;												
+												p {
+													font-size: 21px;
+													text-align: justify;
+													color: #000 !important;
+													@media (max-width: 1200px) {
+														font-size: 16px;
+													}
+													span.more-text {
+														display: none;
+													}
+													a.showmore {
+														display: block;
+														text-align: center;
+														font-size: 21px;
+														color: #E16E38;
+														font-family: 'Montserrat-Light', sans-serif;
+													}
+												}
+											}
+										}
+									}
+								}
+								#nearby {
+									.tab-nearby-top {
+										padding-bottom: 20px;
+										h3 {
+											font-size: 30px;
+											color: #000;
+											font-family: 'Montserrat-SemiBold', sans-serif;
+											padding-right: 70px;
+										}
+
+									}
+									.tab-nearby-map {
+										iframe {
+											width:100%!important;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+}

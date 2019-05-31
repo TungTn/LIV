@@ -1,0 +1,149 @@
+@include bp(max, 750px) {
+	.IssueArea {
+		.mv {
+			&__item {
+				height: 240px;
+				.content {
+					width: 100%;
+					.tit {
+						font-size: 30px;
+						font-family: 'Montserrat-Medium';
+					}
+					.date {
+						font-size: 18px;
+					}
+					.author {
+						font-size: 18px;
+						font-family: 'Montserrat-Medium';
+						margin: 15px;
+						.name {
+							&:after {
+								content: '|';
+								margin: 0 10px;
+							}
+						}
+					}
+				}
+			}
+			.swiper-pagination-bullet {
+				border: 2px solid #fff;
+				background: none;
+				height: 10px;
+				margin: 0 5px;
+				opacity: 1;
+				width: 10px;
+				opacity: 1;
+			}
+			.swiper-pagination-bullet-active {
+				background: #fff;
+			}
+		}
+		.issue_section {
+			margin: 25px 0;
+			.container {
+				.main {
+					display: flex;
+					margin-top: 30px;
+					.content {	
+						margin-bottom: 0;					
+						.title {
+							font-size: 30px;
+							font-family: 'Montserrat-Medium';
+							line-height: 1;
+							margin-bottom: 15px;
+						}
+						.today_news {
+							.today_news_block {
+								display: flex;
+								justify-content: space-between;
+								align-items: baseline;
+								.todays_news_ttl {
+									color: #000;
+									font-size: 21px;
+									font-family: 'Montserrat-Medium', sans-serif;
+									width: 60%;
+								}
+								.dropdown {
+									width: 40%;
+									select {
+										&.icondown {
+										}
+										& + i.chevron-down {
+										}
+									}
+								}
+							}
+							.list {
+								.item {
+									& + .item {
+										&:before {
+										}
+									}
+									.in {
+									}
+									.imgArea {
+										display: flex;
+										width: 100%;
+										.padding-left-10 {
+											width: 100%;
+											height: 200px;
+										}
+									}
+									.like_view_sp {
+										color: #000;
+										.view {
+											position: relative;
+											&:after {
+												content: '|';
+												margin: 0 10px;
+											}
+										}
+									}
+									.top {
+										margin-bottom: 0;
+									}
+									.tit {
+										font-size: 16px;
+										font-family: 'Montserrat-Medium';
+										line-height: 1.5;
+										a {
+										}
+									}
+									.txt {
+										color: #000;
+										font-size: 14px;
+										line-height: 1.2;
+										text-align: justify;
+										margin-bottom: 25px;
+									}
+									.chatting {
+									}
+									.author {
+										color: #000;
+										display: flex;
+										font-size: 14px;
+										line-height: 1;
+										margin-bottom: 15px;
+										.name {
+											position: relative;
+											&:after {
+												content: '|';
+												margin: 0 10px;
+											}
+										}
+									}
+								}
+							}
+						}
+						.see_more {
+							margin: 20px 0 0;
+						}
+					}
+				}				
+			}
+		}
+	}
+}
+.like_view_sp{
+	margin-top:10px;
+}

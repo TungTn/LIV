@@ -1,0 +1,280 @@
+//————————————————————————————————————————————
+// Advertis
+//————————————————————————————————————————————
+.AdvertisArea {
+  .mv {
+    &__item {
+      color: #fff;
+      height: 600px;
+      text-align: center;
+      margin: auto;
+      position: relative;
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        .tit {
+          font-size: 60px;
+          font-family: 'Montserrat-SemiBold';
+          line-height: 1;
+          @media only screen and (max-width: 1200px) {
+            font-size: 48px;
+          }
+        }
+        .date {
+          font-size: 30px;
+          font-family: 'Montserrat-Medium';
+          line-height: 1;
+          margin: 30px 0 40px;
+        }
+        .news {
+          max-width: 518px;
+          height: 100px;
+          line-height: 100px;
+          background: #FFCC40;
+          text-transform: uppercase;
+          font-size: 37px;
+          color: #146A9C;
+          font-family: 'Montserrat-Medium';
+        }
+      }
+    }
+    .swiper-pagination-bullet {
+      display: none;
+      border: 2px solid #fff;
+      background: none;
+      height: 14px;
+      margin: 0 10px;
+      opacity: 1;
+      width: 14px;
+    }
+    .swiper-pagination-bullet-active {
+      background: #fff;
+    }
+  }
+  .section {
+    margin: 33px 0 180px;
+    .container {
+      display: flex;
+    }
+    .inner {
+      width: 100%;
+      .main {
+        display: flex;
+        margin-top: 30px;
+        .content {
+          width: 100%;
+          max-width: 100%;
+          padding-top: 45px;
+          .advertis_info {
+            padding-bottom: 30px;
+            .box-collapse {
+              padding: 0 0 32.5px;
+              .collapsible {
+                cursor: pointer;
+                position: relative;
+                text-align: center;
+                .container-img {
+                  img {
+                    width: 100%;
+                    max-height: 336px;
+                    height: 336px;
+                    @media (max-width: 1200px) {
+                      height: auto;
+                    }
+                  }
+                  &:hover {
+                    background: #FFF;
+                    opacity: .7;
+                  }
+                }
+                .container-txt {
+                  .tit {
+                    font-size: 45px;
+                    @media (max-width: 1200px) {
+                      font-size: 35px;
+                    }
+                    a {
+                      color: #fff;
+                    }
+                  }
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 100%;
+                  color: #FFF;
+                  font-family: 'Montserrat-Medium';
+                  &.hasCollapse {
+                    &:after {
+                      content: "";
+                      background:url('../images/advertis/arrow-down.png');
+                      width: 30px;
+                      height: 30px;
+                      display: block;
+                      background-repeat: no-repeat;
+                      margin: 0 auto;
+                      position: relative;
+                      top: 100px;
+                    }
+                  }
+                  &.container-txt-specs {
+                    .tit {
+                      font-size: 45px;
+                      margin-bottom: 20px;
+                      @media (max-width: 1200px) {
+                        margin-bottom: 10px;
+                      }
+                    }
+                    .box_collapse_mini {
+                      display: flex;
+                      flex-wrap: wrap;
+                      margin: 0 auto;
+                      justify-content: center;
+                      a {
+                        &.box__collapse {
+                          border: 1px solid #fff;
+                          border-radius: 5px;
+                          width: calc((100% - 60px) / 3);
+                          height: 80px;
+                          margin: 10px;
+                          position: relative;
+                          display: flex;
+                          align-items: center;
+                          @media (max-width: 1200px) {
+                            height: auto;
+                          }
+                        }
+                        &.active {
+                          background: #FFF;
+                          opacity: .9;
+                          color: #E16E38;
+                          &:after {
+                            content: "";
+                            background: url(../images/advertis/arrow-single-up.png);
+                            width: 16px;
+                            height: 16px;
+                            display: block;
+                            background-repeat: no-repeat;
+                            text-align: center;
+                            background-position: center;
+                            margin: 0 auto;
+                            position: absolute;
+                            bottom: 5px;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                            color: #E16E38;
+                          }
+                        }
+                        .txt {
+                          vertical-align: middle;
+                          font-size: 16px;
+                          line-height: 1.5;
+                          padding:5px 5px 0 5px;
+                          text-align: center;
+                          width: 100%;
+                          padding-bottom: 15px;
+                          @media (max-width: 1200px) {
+                            font-size: 14px;
+                          }
+                        }
+                        .icon {
+                          span {
+                            content: "";
+                            background: url(../images/advertis/arrow-single-down.png);
+                            width: 16px;
+                            height: 16px;
+                            display: block;
+                            background-repeat: no-repeat;
+                            text-align: center;
+                            background-position: center;
+                            margin: 0 auto;
+                            position: absolute;
+                            bottom: 5px;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .box__collapse__open {
+                color: #000;
+                padding: 15px 15px 50px;
+                display: inline-block;
+                border: 1px solid #000;
+                border-top: 0;
+                cursor: pointer;
+                width: 100%;
+                p {
+                  font-size: 18px;
+                  font-family: 'montserrat-light';
+                  @media (max-width: 1200px) {
+                    font-size: 14px;
+                  }
+                }
+                &.hasCollapse {
+                  p {
+                    &:after {
+                      content: "";
+                      background:url('../images/advertis/arrow-up.png');
+                      width: 30px;
+                      height: 30px;
+                      display: block;
+                      background-repeat: no-repeat;
+                      margin: 0 auto;
+                      position: relative;
+                      top: 40px;
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+              .content-collapse {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 1s ease-out;
+                &.hasCollapse {
+                  p {
+                    &:after {
+                      content: "";
+                      background:url('../images/advertis/arrow-up.png');
+                      width: 30px;
+                      height: 30px;
+                      display: block;
+                      background-repeat: no-repeat;
+                      margin: 0 auto;
+                      position: relative;
+                      top: 40px;
+                      cursor: pointer;
+                    }
+                  }
+                }
+                p {
+                  color: #000;
+                  padding: 15px 15px 50px;
+                  display: inline-block;
+                  border: 1px solid #000;
+                  border-top: 0;
+                  cursor: pointer;
+                  font-size: 18px;
+                  font-family: 'montserrat-light';
+                  strong {
+                    font-family: 'montserrat-medium';
+                  }
+                  @media (max-width: 1200px) {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

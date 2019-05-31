@@ -1,0 +1,112 @@
+//————————————————————————————————————————————
+// Footer
+//————————————————————————————————————————————
+footer {
+  border-top: 1px solid #ccc;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 30px 0;
+    @media only screen and (max-width: 1200px) {
+      padding: 24px 24px 0;
+    }
+    &__ttl {
+      color: #000;
+      font-size: 21px;
+      font-family: 'Montserrat-SemiBold';
+      line-height: 1;
+      margin-bottom: 20px;
+      @media only screen and (max-width: 1200px) {
+        font-size: 17px;
+        margin-bottom: 16px;
+      }
+    }
+    &__item {
+      a {
+        color: #11689b;
+        font-size: 21px;
+        line-height: 1;
+        transition: all .3s;
+        @media only screen and (max-width: 1200px) {
+          font-size: 17px;
+        }
+        &:hover {
+          opacity: .7;
+        }
+      }
+      & + & {
+        margin-top: 17px;
+      }
+      &__policy {
+        margin-top: 10px;
+      }
+    }
+    &__sns {
+      display: flex;
+      &__icon {
+        a {
+          transition: all .3s;
+          &:before {
+            content: "";
+            background: url("../images/footer/insta.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            display: block;
+            @media only screen and (max-width: 1200px) {
+              height: 24px;
+              width: 24px;
+            }
+          }
+          &:hover {
+            &:before {
+              opacity: .7;
+            }
+          }
+        }
+        &:nth-child(2) {
+          margin-left: 10px;
+          a {
+            &:before {
+              content: "";
+              background: url("../images/footer/fb.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+    &__logo {
+      transition: all .3s;
+      img {
+        max-width: 135px;
+      }
+      &:hover {
+        opacity: .7;
+      }
+    }
+    &__copyright {
+      display: flex;
+      justify-content: center;
+      margin-top: 77px;
+      width: 100%;
+      @media only screen and (max-width: 1200px) {
+        margin-top: 61px;
+        justify-content: flex-start;
+      }
+      &__txt {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1;
+        margin: 7px 0 0 20px;
+        @media only screen and (max-width: 1200px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+

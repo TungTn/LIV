@@ -1,0 +1,202 @@
+//————————————————————————————————————————————
+// Life Info Details
+//————————————————————————————————————————————
+@include bp(max, 750px) {
+	.lifeInforDetailsArea {
+		.section {
+			margin: 25px 0;
+			&.life_info_details_section {
+				.life-info-top-page {
+					.title {
+						font-size: 21px;
+						font-family: 'Montserrat-Medium';
+						a {
+							&:after {
+								display: none;
+							}
+						}
+					}
+					.afterttl {
+						position: relative;
+						&:after {
+							background: #ED2027;
+							content: 'Blog Post';
+							color: #fff;
+							font-size: 14px;
+							margin: 10px 0 0;
+							padding: 3px 10px;
+							display: inline-block;
+						}
+					}
+					.life-info-details-add {
+						.address-details {
+							li {
+								display: flex;
+								&.user-post {									
+									&:after {
+										content: "";
+									}
+								}
+								&.view-count {
+									.view {
+										&:after { 
+											content: "|";
+											margin: 0 5px;
+											color: #000;
+										}
+									}
+									&:after {
+										content: "";
+									}
+								}
+								span {
+									font-size: 14px;
+									font-family: 'Montserrat-Regular';
+								}
+							}
+						}
+					}
+				}
+				.container {
+					display: flex;
+				}
+				.inner {
+					width: 100%;
+					.main {
+						display: flex;
+						.content {
+							width: 100%;
+							.life-info-details {								
+								.life-info-details-content {
+									border-bottom: solid 1px #ccc;
+									padding-bottom: 15px;
+									img {
+										width: 100%;
+									}
+									.title-img {
+										padding-top:10px;
+										display: block;
+									}
+									.text-content {
+										p {
+											color: #333;
+											font-size: 14px;
+											font-family: 'Montserrat-Regular', san-serif;
+											padding: 10px 0;
+										}
+										strong {
+											color: #333;
+											font-size: 24px;
+											font-family: 'Montserrat-SemiBold', san-serif;
+											padding: 15px 0;
+											display: block;
+										}
+									}
+								}
+								.title {
+									font-size: 21px;
+									font-family: 'Montserrat-SemiBold';
+									line-height: 1;
+									margin: 25px 0;
+									color: #000;
+								}
+								.related-blog-posts {
+									display: flex;
+									flex-wrap: wrap;
+									justify-content: space-between;
+									.article {
+										width: 100%;
+										margin-bottom: 15px;
+										.img {
+											position: relative;
+											&:before {
+												content: "Blog Post";
+												line-height: 18px;
+												background: #ED2027;
+												color: #fff;
+												font-size: 14px;
+												left: 0;
+												position: absolute;
+												top: 0;
+												transition: all .3s;
+												padding: 4px 20px;
+											}
+											&.img_releated {
+												height: 168.29px;	
+												img {
+													width: 100%;
+												}										
+											}										
+										}
+										.box {
+											border: 1px solid #ccc;
+											padding: 15px 20px;
+											.ttl {
+												padding:0;
+												font-size: 16px;
+												font-family: 'Montserrat-SemiBold';
+												line-height: 1;
+												a {
+													color: #11689B;
+													overflow: hidden;
+													text-overflow: ellipsis;
+													line-height: 24px;
+													-webkit-line-clamp: 1;
+													display: -webkit-box;
+													-webkit-box-orient: vertical;
+												}
+											}
+											.rate {
+												span {
+													color: #333;
+													font-size: 14px;
+													font-family: 'Montserrat-Regular';
+												}
+												.view {
+													&:after {
+														content: "|";
+														margin: 0 5px;
+														color: #333;
+													}
+												}
+											}
+										}
+									}								
+								}
+								.life-info-details-comment{
+									.page-section {
+										border-bottom: 1px solid #ccc;
+										padding-bottom: 20px;
+										.testimonial {
+											h3 {
+												font-family: 'Montserrat-Medium';
+											}
+										}
+										.comments__box {
+											h3 {
+												font-family: 'Montserrat-Medium', sans-serif;
+												margin: 15px 0;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+				}
+				.banner {
+					padding-top: 0;
+				}
+
+			}
+		}
+	}
+	.life_info_details_img {
+		height: 245px;
+	}
+}
+
+
+
+

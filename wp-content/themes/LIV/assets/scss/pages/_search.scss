@@ -1,0 +1,158 @@
+.searchArea {
+    .section {
+        margin: 33px 0 180px;
+        &.search_section {
+            .container {
+                display: flex;
+            }
+            .search-top-page {          
+                padding: 0 0 30px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                &.nothing-found {
+                    .alert {
+                        .title {
+                            font-size: 30px;
+                            color: #11689B;
+                            line-height: 1;
+                        }
+                    }
+                }
+                .title {
+                    color: #000;
+                    font-size: 36px;
+                    line-height: 2;
+                }
+                .result {
+                    color: #000;
+                    font-size: 18px;
+                    margin-bottom: 25px;
+                }
+                .ttl {
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+                    color: #000;
+                }
+                .menu-search {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .menu-search-in {
+                        display: flex;
+                        .search-box-result {
+                            display: flex;
+                            margin: 0 10px; 
+                            &:last-child {
+                                margin: 0 0 0 10px;
+                            }                       
+                            .active {
+                                border: solid 2px #11689B;
+                                color: #11689B;
+                                padding: 5px 25px;
+                            }
+                            .unactive {
+                                border: solid 2px #000000;
+                                color: #000000;
+                                opacity: .4;
+                                padding: 5px 25px;
+                                cursor: default;
+                            }
+                        }
+                    }
+                }
+            }   
+            .inner {
+                width: calc(100% - 20%);
+                .main {
+                    display: flex;
+                    .content {
+                        width: 100%;
+                        .search {
+                            .search-details {  
+                                margin: 15px 0;
+                                .title {
+                                    font-size: 30px;
+                                    color: #11689B;
+                                    font-weight: bold;
+                                }
+                                .search-box {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: space-between;
+                                    border-bottom: solid 1px #ccc;
+                                    padding-bottom: 30px;
+                                    .list {
+                                        margin-top: 13px;
+                                        .item {
+                                            display: flex;
+                                            position: relative;
+                                            & + .item {
+                                                margin-top: 30px;
+                                            }
+                                            .img {
+                                                &-search {
+                                                    width: 200px;
+                                                    height: 200px;
+                                                    margin-right: 30px;
+                                                    cursor: pointer;
+                                                }
+                                                &:hover {
+                                                    opacity: .7;
+                                                }
+                                            }
+                                            .tit {
+                                                font-size: 21px;
+                                                font-family: 'Montserrat-SemiBold';
+                                                line-height: 1;
+                                                position: relative;
+                                                a {
+                                                    color: #11689B;
+                                                }
+                                            }
+                                            .date {
+                                                font-size: 16px;
+                                                line-height: 1;
+                                                margin: 10px 0;
+                                                color: #000;
+                                            }
+                                            .txt {
+                                                color: #000;
+                                                font-size: 18px;
+                                                line-height: 1.2;
+                                            }
+                                            .chatting {
+                                                color: #000;
+                                                display: flex;
+                                                font-size: 16px;
+                                                line-height: 1;
+                                                margin-top: 10px;
+                                                position: absolute;
+                                                bottom: 0;
+                                                .view {
+                                                    &:after {
+                                                        content: "|";
+                                                        margin:0 10px 0 5px;
+                                                        color: #000;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .see_more {
+                                        margin:25px 0 0;
+                                        width: 100%;
+                                    }                           
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+

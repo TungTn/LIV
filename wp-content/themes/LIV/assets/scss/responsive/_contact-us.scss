@@ -1,0 +1,71 @@
+//————————————————————————————————————————————
+// Contact  Us
+//————————————————————————————————————————————
+.ContactsArea {
+  @include bp(max, 750px) {
+    .mv {
+      &__item {
+        height: 240px;
+        .content {
+          .tit {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .section {
+      margin: 25px 0 0;
+      .inner {
+        width: 100%;
+        .main {
+          margin-top: 0;
+          .content {
+            width: 100%;
+            padding-top: 0;
+            .contact_info {
+              padding-bottom: 20px;
+              h4 {
+                font-size: 21px;
+                margin-bottom: 15px;
+              }
+              .subttl {
+                margin-bottom: 2px;
+              }
+              form {
+                .form__block {
+                  flex-direction: column;
+                  padding: 10px 0 0;
+                  width: 100%;
+                  &__ttl {
+                    width: 100%;
+                    text-align:left;
+                  }
+                  &__input {
+                    width: 100%;
+                    -webkit-appearance: none;
+                    .wpcf7-form-control-wrap {
+                      width: 100%;
+                      input {
+                        width: 100%;
+                      }
+                      textarea {
+                        width: 100%;
+                      }
+                    }
+                  }
+                  .wpcf7-submit {
+                    height: 40px;
+                    width: 110px;
+                    padding: 0;
+                    font-size: 14px;
+                    border-radius: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

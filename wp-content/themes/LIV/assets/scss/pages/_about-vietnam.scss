@@ -1,0 +1,338 @@
+//————————————————————————————————————————————
+// About  Vietnam
+//————————————————————————————————————————————
+.About_vnArea {
+	.mv {
+		&__item {
+			color: #fff;
+			height: 600px;
+			text-align: center;
+			margin: auto;
+			position: relative;
+			.content {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				.tit {
+					font-size: 60px;
+					font-family: 'Montserrat-SemiBold';
+					line-height: 1;
+				}
+			}
+		}
+		.swiper-pagination-bullet {
+			border: 2px solid #fff;
+			background: none;
+			height: 14px;
+			margin: 0 10px;
+			opacity: 1;
+			width: 14px;
+		}
+		.swiper-pagination-bullet-active {
+			background: #fff;
+		}
+	}
+	.section {
+		margin: 0 0 180px;
+		.container {
+			display: flex;
+		}
+		.inner {
+            width: 100%;
+			.main {
+				display: flex;
+				.content {
+                    width: 100%;
+                    max-width: 907px;
+                    .about_vn_info {
+                        padding-top: 45px;
+                        padding-bottom: 30px;
+                        a {
+                            color: #11689B;
+                        }
+                        p {
+                            color: #000;
+                            font-family: 'Montserrat-Light';
+                            font-size: 16px;
+                            line-height: 1.5;
+                            text-align: justify;
+                            @media (max-width: 1200px) {
+                                font-size: 14px;
+                            }
+                            span {
+                                font-family: 'Montserrat-Regular';
+                                line-height: 2;
+                            }
+                        }
+                        ul {
+                            li {
+                                color: #000;
+                                font-family: 'Montserrat-Light';
+                                line-height: 1.5;
+                                font-size: 16px;
+                            }
+                        }
+                        h4 {
+                            font-size: 30px;
+                            color: #000;
+                            margin-bottom: 9px;
+                            &.flag {
+                                position: relative;
+                                &:after {
+                                    content: "";
+                                    background: url("../images/about_vietnam/flag_vn.png") no-repeat;
+                                    background-size: cover;
+                                    width: 35px;
+                                    height: 35px;
+                                    position: absolute;
+                                    margin-left: 25px;
+                                }
+                            } 
+                            @media (max-width: 1200px) {
+                                font-size: 24px;
+                            }                          
+                        }
+                        &__section {
+                            h4 {
+                                font-size: 48px;
+                                font-family: 'Montserrat-Regular',sans-serif;
+                                color: #11689B;
+                                line-height: 1;
+                                margin-bottom: 0;
+                                @media (max-width: 1200px) {
+                                    font-size: 40px;
+                                }
+                            }
+                            h5 {
+                                font-size: 24px;
+                                font-family: 'Montserrat-Regular',sans-serif;
+                                color: #11689B;
+                                line-height: 1;
+                                margin-bottom: 0;
+                                margin-left: 15px;
+                                @media (max-width: 1200px) {
+                                    font-size: 20px;
+                                }
+                            }
+                            span {
+                                font-size: 16px;
+                                color: #000;
+                                font-family: 'Montserrat-Light',sans-serif;
+                                line-height: 1.5;
+                                @media (max-width: 1200px) {
+                                    font-size: 14px;
+                                }
+                            }                            
+                            .list {
+                                .item {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    &__details {
+                                        width: calc((100% - 30px) / 2);                                
+                                        margin: 15px 0;
+                                        &:nth-of-type(even) {
+                                            margin-left: 30px;
+                                        }
+                                        &__box {                                     
+                                            &--image {
+                                                position: relative;
+                                                margin-bottom: 10px;
+                                                display: flex;
+                                                align-items: flex-end;
+                                                min-height: 65px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &--02 {
+                                .list {
+                                    .item {
+                                        &__details {
+                                            width: 100%;
+                                            &__box { 
+                                                &--content {
+                                                    &--percent {
+                                                        margin-top: 10px;
+                                                        .percent {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            &:nth-of-type(n+2) {
+                                                                padding-top: 10px;
+                                                            }
+                                                            &--ttl {
+                                                                width: 65px;
+                                                                display: flex;
+                                                                align-items: center;
+                                                                color: #000;
+                                                            }
+                                                            &--box {   
+                                                                width: calc( 100% - 65px );  
+                                                                display: flex;
+                                                                position: relative;   
+                                                                align-items: center;
+                                                                height: 32px;
+                                                                padding-left: 15px;   
+                                                                @for $i from 1 through 100 {
+                                                                    &-default {
+                                                                        display: flex;
+                                                                        height: 32px;                                                                        
+                                                                        &.w#{$i} {
+                                                                            $value: ($i * 1%);
+                                                                            width: $value;
+                                                                            align-items: center;                                                                                                                                               
+                                                                        }     
+                                                                        &.y2013 {
+                                                                            background: #e6eff4;
+                                                                        }
+                                                                        &.y2014 {
+                                                                            background: #cee0ea;
+                                                                        }
+                                                                        &.y2015 {
+                                                                            background: #b6d0df;
+                                                                        }
+                                                                        &.y2016 {
+                                                                            background: #9fc2d6;
+                                                                        }                                                                      
+                                                                    }     
+                                                                }                                         
+                                                                @for $i from 1 through 100 {
+                                                                    &-show {
+                                                                        display: flex;
+                                                                        height: 32px;
+                                                                        &.w#{$i} {
+                                                                            $value: ($i * 1%);
+                                                                            width: $value;
+                                                                            background: #cee0ea;
+                                                                            padding-left: 15px;  
+                                                                            align-items: center;                                                                      
+                                                                            &:before {
+                                                                                content: "";
+                                                                                background: url("../images/about_vietnam/male.png") no-repeat;
+                                                                                width: 16px;
+                                                                                height: 19px;
+                                                                                position: absolute;
+                                                                                margin-right: 5px;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    &-hide {
+                                                                        display: flex;
+                                                                        height: 32px;
+                                                                        &.w#{$i} {
+                                                                            $value: ($i * 1%);
+                                                                            width: $value;
+                                                                            background: #e6eff4;
+                                                                            padding-left: 15px;
+                                                                            align-items: center;
+                                                                            &:before {
+                                                                                content: "";
+                                                                                background: url("../images/about_vietnam/female.png") no-repeat;
+                                                                                width: 16px;
+                                                                                height: 19px; 
+                                                                                position: absolute;
+                                                                                margin-right: 5px;                                                                       
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                } 
+                                                                span {
+                                                                    margin-left: 15px;
+                                                                }                                                                                                                        
+                                                            }
+                                                        }  
+                                                    }
+                                                    p {
+                                                        margin: 10px 0;
+                                                    }
+                                                    &--details {
+                                                        display: flex;    
+                                                        width: 100%;                                                    
+                                                        p {
+                                                            font-size: 14px;
+                                                            font-family: 'Montserrat-Light',sans-serif;
+                                                            text-align: inherit;
+                                                            margin: 0 0 15px;
+                                                        }
+                                                        h6 {
+                                                            font-size: 22px;
+                                                            font-family: 'Montserrat-Regular',sans-serif;
+                                                            @media (max-width: 1200px) {
+                                                                font-size: 16px;
+                                                            }
+                                                        }
+                                                        &__items3 {
+                                                            display: flex; 
+                                                            width: 100%;
+                                                            &-01 {
+                                                                width: 15%;
+                                                                background: #b9d3e0;
+                                                                padding: 10px 0 10px 15px;                                                            
+                                                            }
+                                                            &-02 {
+                                                                width: 60%;
+                                                                background: #cee0ea;
+                                                                padding: 10px 0 10px 15px;
+                                                            }
+                                                            &-03 {
+                                                                width: 25%;
+                                                                background: #e6eff4;
+                                                                padding: 10px 0 10px 15px;
+                                                            }
+                                                        }   
+                                                        &__items4 {
+                                                            display: flex; 
+                                                            width: 100%;
+                                                            &-01 {
+                                                                width: 15%;
+                                                                background: #a4c5d8;
+                                                                padding: 10px 0 10px 15px;                                                            
+                                                            }
+                                                            &-02 {
+                                                                width: 55%;
+                                                                background: #b9d3e0;
+                                                                padding: 10px 0 10px 15px;
+                                                            }
+                                                            &-03 {
+                                                                width: 20%;
+                                                                background: #cee0ea ;
+                                                                padding: 10px 0 10px 15px;
+                                                            }
+                                                            &-04 {
+                                                                width: 10%;
+                                                                background: #e6eff4;
+                                                                padding: 10px 0 10px 15px;
+                                                            }                                                        
+                                                        }                                            
+                                                    }                                                    
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .banner {
+                    .link {
+                        box-shadow: 3px 3px 10px 0px rgba(153,153,153,0.5);
+                        display: block;
+                        transition: all .3s;
+                        & + .link {
+                        margin-top: 30px;
+                        }
+                        &:hover {
+                        opacity: .7;
+                        }
+                    }
+                }
+                .home_banner {
+                    margin-left: 33px;
+                }
+            }
+        }
+    }
+}

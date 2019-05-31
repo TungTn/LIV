@@ -1,0 +1,67 @@
+@charset 'utf-8';
+
+@import "mixin";
+@import "fonts";
+@import "common";
+
+// Common partials
+@import "partials/content";
+@import "partials/header";
+@import "partials/footer"; 
+  
+
+@import "pages/home";
+@import "pages/search";
+@import "pages/restaurant";
+@import "pages/restaurant-list";
+@import "pages/restaurant-details";
+@import "pages/touris";
+@import "pages/touris-details";
+@import "pages/life-info";
+@import "pages/news-info";
+@import "pages/news-info-details"; 
+@import "pages/life-info-details";
+@import "pages/issue";
+@import "pages/issue-details";
+@import "pages/careers";
+@import "pages/policy";
+@import "pages/advertis";  
+@import "pages/contact-us";  
+@import "pages/about-us";
+@import "pages/about-vietnam"; 
+
+// Common partials responsive
+@import "responsive/common";
+@import "responsive/header";
+@import "responsive/footer";
+
+
+@import "responsive/home";
+@import "responsive/news-info";
+@import "responsive/news-info-details";   
+@import "responsive/life-info-details";
+@import "responsive/listpage";
+@import "responsive/policy";
+@import "responsive/about-us";
+@import "responsive/touris";
+@import "responsive/touris-details";
+@import "responsive/advertis";
+
+@import "responsive/careers";
+@import "responsive/restaurant";
+@import "responsive/restaurant-list";
+@import "responsive/restaurant-details";
+
+@import "responsive/issue";
+@import "responsive/issue-list";
+@import "responsive/issue-details";
+@import "responsive/life-info-list";
+@import "responsive/life-info";
+@import "responsive/contact-us";
+@import "responsive/search";
+
+
+@import "responsive/about-vietnam";
+
+
+

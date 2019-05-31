@@ -1,0 +1,147 @@
+//————————————————————————————————————————————
+// Careers
+//————————————————————————————————————————————
+.careersArea {
+	.mv {
+		&__item {
+			color: #fff;
+			height: 600px;
+			text-align: center;
+			margin: auto;
+			position: relative;
+			.content {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				.tit {
+					font-size: 60px;
+					font-family: 'Montserrat-SemiBold';
+          line-height: 1;
+          @media (max-width: 1200px) {
+            font-size: 48px;
+          }
+				}
+			}
+		}
+		.swiper-pagination-bullet {
+			border: 2px solid #fff;
+			background: none;
+			height: 14px;
+			margin: 0 10px;
+			opacity: 1;
+			width: 14px;
+		}
+		.swiper-pagination-bullet-active {
+			background: #fff;
+		}
+	}
+	.section {
+		margin: 30px 0 180px;
+		.container {
+			display: flex;
+		}
+		.inner {
+      width: 100%;
+			.main {
+				display: flex;
+				margin-top: 30px;
+				.content {
+          width: 100%;
+          max-width: 100%;
+          padding-top: 45px;
+          .careers_info {
+            padding-bottom: 30px;
+            a {
+              color: #11689B;
+            }
+            p {
+              color: #000;
+              font-family: 'Montserrat-Light';
+              font-size: 16px;
+              line-height: 1.5;
+              text-align: justify;
+              span {
+                font-family: 'Montserrat-Regular';
+                line-height: 2;
+              }
+              @media (max-width: 1200px) {
+                font-size: 14px;
+              }
+            }
+            ul {
+              li {
+                color: #000;
+                font-family: 'Montserrat-Light';
+                line-height: 1.5;
+                font-size: 16px;
+              }
+            }
+            h4 {
+              font-size: 30px;
+              color: #000;
+              @media (max-width: 1200px) {
+                font-size: 24px;
+              }
+            }
+            .list {
+              margin-bottom: 50px;
+              .item {
+                display: flex;
+                & + .item {
+                  margin-top: 30px;
+                }
+                .img {
+                  max-width: 231px;
+                  margin-right: 20px;
+                  width: 100%;
+                  a {
+                    display: block;
+                    transition: all .3s;
+                    &:hover {
+                      opacity: .7;
+                    }
+                    img {
+                      width: 100%;
+                    }
+                  }
+                }
+                .box {
+                  color: #11689b;
+                  max-width: calc(100% - 231px);
+                  .ttl {
+                    display: inline-block;
+                    font-size: 21px;
+                    line-height: 1;
+                    margin-top: -3px;
+                    position: relative;
+                    a {
+                      font-family: 'Montserrat-Regular',sans-serif;
+                      color: #000;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .banner {
+          .link {
+            box-shadow: 3px 3px 10px 0px rgba(153,153,153,0.5);
+            display: block;
+            transition: all .3s;
+            & + .link {
+              margin-top: 30px;
+            }
+            &:hover {
+              opacity: .7;
+            }
+          }
+        }
+        .home_banner {
+          margin-left: 33px;
+        }
+      }
+    }
+  }
+}
